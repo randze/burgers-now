@@ -1,4 +1,4 @@
-const db = require('./connection.js')
+const db = require('./connection')
 
 function selectAll() {
     return db.query("SELECT * FROM burgers")

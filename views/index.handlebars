@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-6">
+        <ul class="list-group">
+            {{#each available}}
+            <li class="list-group-item">{{burger_name}}<a href="/devour/{{id}}" class="btn btn-primary myBtn" type="button"><img src="./assets/img/devour.png" alt="BurgerIcon" style="max-width: 20px;max-height: 20px;"> Eat!</a></li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-6">
+        <ul class="list-group">
+            {{#each devoured}}
+                <li class="list-group-item">{{burger_name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat-Da-Burger</title>
+
+    <!-- {{!-- BootStrap CSS -- --}} -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- {{!-- Local CSS --}} -->
+    <link rel="stylesheet" href="../../public/assets/css/style.css">
+</head>
+<body>
+    <div class="text-center p-5 jumbo">
+        <h1>Eat-da-Burger<img src="../../public/assets/img/burger.png" alt="BurgerIcon"></h1>
+    </div>
+    <br>
+    <div class="container" style="max-width:768px;">
+        <div class="row">
+            <div class="col-6">
+                <!-- <button class="btn btn-primary" type="button" id="button-addon2"><img class ="mybtn" src="../../public/assets/img/devour.png" alt="BurgerIcon"></button> -->
+                <ul class="list-group">
+                    <li class="list-group-item">{{burger_name}}<a href="/devour/{{id}}" class="btn btn-primary myBtn" type="button"><img src="../../public/assets/img/devour.png" alt="BurgerIcon" style="max-width: 20px;max-height: 20px;"> Eat!</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" style="max-width:480px;">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter a burger you want to eat">
+            <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
+        </div>
+    </div>
+
+    <!-- {{!-- Bootstrap JS --}} -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
